@@ -47,9 +47,10 @@ body {
     min-height: 100vh;
     background-color: var(--third-color);
     color: var(--secondary-color);
+    scroll-behavior: smooth;
 }
 
-.container {padding-inline: var(--distance-6);}
+.container {padding-inline: var(--distance-3);}
 
 /*TEXT*/
 
@@ -254,7 +255,7 @@ p, a, li, span, small, strong, label, option, input {
 
 /*FLEXBOX*/
 
-.display-flex { display: flex; }
+.display-flex {display: flex;}
 .flex-center {justify-content: center;}
 .flex-column {flex-direction: column;}
 .flex-end {justify-content: flex-end;}
@@ -278,7 +279,7 @@ p, a, li, span, small, strong, label, option, input {
 
 #header {
     width:100%;
-    height: 80px;
+    height: 90px;
     background-color: var(--third-color)
 }
 
@@ -292,7 +293,33 @@ p, a, li, span, small, strong, label, option, input {
     background-color: var(--primary-color);
     color: var(--third-color);
     text-transform: uppercase;
+    text-align: center;
     border: none;
     border-radius: var(--radius-4);
     cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--third-color);
+    color: var(--primary-color);
+    border-radius: var(--radius-4);
+    border: 3px, solid, var(--primary-color);
+    padding: none;
+}
+
+.circle {
+    background: var(--primary-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.moveup {
+    animation-name: moveup;
+    animation-duration: 2s;
+}
+
+@keyframes moveup {
+    from {transform: translateY(100px);}
+    to {transform: translateY(0);}
 }
