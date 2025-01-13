@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="library.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,32 +17,34 @@
 
     <header id="header" class="container display-flex flex-between pd-block-1 align-center sticky">
         <img class="mainlogo pd-block-1" src="imagenes/DA'CAR RENT A CAR RGB-16.png" alt="logo da'car rent a car">
-        <ul class="display-flex gap-2 mg-left-6 h6">
+        <a class="icon-menu" href="#"><i class="fa-solid fa-bars"></i></a>
+        <ul class="main-ul display-flex gap-2 mg-left-6 h6">
+            <a class="icon-close" href="#"><i class="fa-solid fa-circle-xmark"></i></a>
             <li><a class="a" href="#">Nosotros</a></li>
             <li><a class="a" href="#">Nuestra flota</a></li>
             <li><a class="a" href="#">Faq</a></li>
             <li><a class="a" href="#">Blog</a></li>
-            <li><a class="a btn btn:hover" href="#">Cotizar vehículo</a></li>
+            <li><a class="a btn" href="#">Cotizar vehículo</a></li>
         </ul>
     </header>
 
     <!-- MAIN -->
 
 <main id="main" class="container display-flex flex-column align-center">
-    <div class="display-flex pd-right-4 pd-top-6 pd-bottom-2">
-        <h1 class="moveup">Abriendo nuevos <br>caminos <br></h1>
+    <div class="display-flex align-center pd-right-4 pd-top-6 pd-bottom-2">
+        <h1 class="moveup">Abriendo nuevos caminos</h1>
     </div>
-    <div class="display-flex flex center align-center bg-third width-7 pd-inline-2 pd-block-1 radius-4 moveup">
-        <h6>Buscá el mejor auto para tu viaje<h6>
-        <button class="btn mg-left-6">Cotizar vehículo</button> 
+    <div class="main-container display-flex flex-center align-center bg-third width-7 pd-inline-2 pd-block-1 radius-4 moveup">
+        <h6 class="pd-inline-2">Buscá el mejor auto para tu viaje<h6>
+        <button class="btn">Cotizar vehículo</button> 
     </div>
 </main>
 
 <!-- SEPARATOR-1 -->
 
-<article class="container pd-block-6 moveup">
+<div class="container pd-block-6 moveup">
     <h6>¿Porqué elegirnos?</h6>
-</article>
+</div>
 
 <!-- ARTICLE GRID -->
 
@@ -51,13 +52,12 @@
    <div class="first-img size-4  pd-block-2 pd-inline-1 moveup">Asistencia <br>personalizada<br></div>
    <div class="second-img size-4 pd-block-2 pd-inline-1 moveup">Kilometraje <br>ilimitado <br></div>
    <div class="third-img size-4 pd-block-2 pd-inline-1 moveup">Autos 0KM</div>
-   <div class="fird-img size-4 pd-block-2 pd-inline-1 moveup">Tarifas OFF <br>todo el año<br></div>
+   <div class="fourth-img size-4 pd-block-2 pd-inline-1 moveup">Tarifas OFF <br>todo el año<br></div>
 </article>
 
 <!-- SEPARATOR-2 -->
 
 <ul class="container display-flex flex-center gap-2 pd-block-6 align-center moveup">
-    <li class="circle moveup"></li>
     <li><h6 class="moveup">Sobre nosotros</h6></li>
     <li class="btn moveup">Conocé más</li>
 </ul>
@@ -84,7 +84,6 @@ display-flex flex-center">
 <!-- SEPARATOR-4 -->
 
 <ul class=" container display-flex flex-center gap-2 pd-block-6 align-center">
-    <li class="circle moveup"></li>
     <li><h6 class="moveup">Preguntas frecuentes</h6></li>
     <li class="btn moveup">Conocé más</li>
 </ul>
@@ -95,7 +94,6 @@ display-flex flex-center">
 <!-- SEPARATOR-5 -->
 
 <ul class=" container display-flex flex-center gap-2 pd-block-6 align-center mayus">
-    <li class="circle moveup"></li>
     <li><h6 class="moveup">¡Seguinos!</H6></li>
 </ul>
 <ul class="container display-flex flex-center align-center gap-3">
@@ -121,31 +119,7 @@ display-flex flex-center">
             <li><a class="a" href="#">Blog</a></li>
         </ul>
     <form class="contact-form grid grid-cols-2 grid-rows-3">
-        <p class="contact-name">
-            <label>Nombre</label>
-            <input type="text" name="Nombre" id="name">
-        </p>
-        <p class="contact-lastname">
-            <label>Apellido</label>
-            <input type="text" name="Apellido">
-        </p>
-        <p class="contact-email">
-            <label>Email</label>
-            <input type="email" name="email" id="email">
-        </p>
-        <p class="contact-affair">
-            <label>Asunto</label>
-            <input type="text" name="Asunto" id="">
-        </p>
-        <p class="contact-message">
-            <label>Mensaje</label>
-            <textarea name="mensaje" id="" rows="3"></textarea>
-        </p>
-        <p class="contact-submit">
-            <button class="btn" type="submit">
-                Enviar
-            </button>
-        </p>
+        
     </form>
 </footer>
 </body>

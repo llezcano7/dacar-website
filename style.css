@@ -49,7 +49,7 @@ h1{
     grid-column: 3;
     grid-row: span 2;
 }
-.fird-img{
+.fourth-img{
     width: 100%;
     background-color: var(--primary-color);
     color: var(--third-color);
@@ -80,57 +80,3 @@ h1{
 }
 
 /*FOOTER*/
-
-.fa-square-facebook, .fa-square-instagram{
-    color: var(--primary-color);
-    font-size: 8rem;
-    cursor: pointer;
-}
-.contact-name {
-    width: 100%;
-    height: auto;
-    color: var(--third-color);
-    text-align: center;
-    grid-column: 1;
-    grid-row: 1;
-}
-.contact-lastname {   
-    width: 100%;
-    height: auto;
-    color: var(--third-color);
-    text-align: center;
-    grid-column: 2;
-    grid-row: 1;
-}
-.contact-email {
-    width: 100%;
-    height: auto;
-    color: var(--third-color);
-    text-align: center;
-    grid-column: 1;
-    grid-row: 2;
-}
-.contact-affair {
-    width: 100%;
-    height: auto;
-    color: var(--third-color);
-    text-align: center;
-    grid-column: 2;
-    grid-row: 2;
-}
-.contact-message {
-    width: 100%;
-    height: auto;
-    color: var(--third-color);
-    text-align: center;
-    grid-column: 1;
-    grid-row: 3;
-}
-.contact-submit {
-    width: 100%;
-    height: auto;
-    color: var(--third-color);
-    text-align: center;
-    grid-column: 2;
-    grid-row: 3;
-}
